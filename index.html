@@ -1,29 +1,85 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Details element with custom arrow</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<details>
-	<summary>
-		<span class="summary-title">Details element with custom arrow!</span>
-		<div class="summary-chevron-up">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-		</div>
-	</summary>
-
-	<div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
-		my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
-	<div class="summary-chevron-down">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
-		
-</details>
-<!-- partial -->
-  
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>CT-FAQS</title>
+      <link rel="stylesheet" href="reset.min.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <!-- partial:index.partial.html -->
+      <h1 style="text-align: center; color: #002b70; margin-top:20px;text-shadow: 1px 1px 1px #ccc;font-size: 30px;font-weight:bold;">VITEEE - FAQS</h1>
+      <details>
+         <summary>
+            <span class="summary-title">Next button not visible or Next question not visible</span>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content">
+            <div id="faq1">
+               Please ask the student to perform either of the following steps: <br>
+               1. Please click on the +/- button to see the next button. <br>
+               2. Scroll down to the bottom of the page using the scroll bar on the right side and click on next.<br>
+               3. Refresh the test.
+            </div>
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq1');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <details>
+         <summary>
+            <span class="summary-title">Whilte screen at meeting page</span>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq2">
+            Ask them to connect with alternate network
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq2');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <details>
+         <summary>
+            <span class="summary-title">WebCam Issue</span>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq3">
+            1. Check if there is any antivirus installed, disable webcam protection in the antivirus. Or, disable the antivirus if needed. <br>
+            2. if there is no antivirus installed, Kindly go through the video (<a href="https://www.youtube.com/watch?v=za_AklCRRzA" style="text-decoration: none;color: #002b70;font-weight: bold;">https://www.youtube.com/watch?v=za_AklCRRzA</a>) <br>
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq3');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <!-- partial -->
+      <script>
+         function CopyToClipboard(id)
+         {
+         	var r = document.createRange();
+         	r.selectNode(document.getElementById(id));
+         	window.getSelection().removeAllRanges();
+         	window.getSelection().addRange(r);
+         	document.execCommand('copy');
+         	window.getSelection().removeAllRanges();
+         }
+      </script>
+   </body>
 </html>
