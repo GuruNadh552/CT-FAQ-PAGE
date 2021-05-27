@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Certificate Automation</title>
+	<style type="text/css">
+		#output{
+			font-family:Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			background-color: #ffffff;
+			color: #000000;
+		}
+	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="col">
+			<div class="card" style="margin:10px;border: 1px solid #ccc;">
+				<div class="card-header bg-primary text-light text-center" style="padding: 8px;font-weight: bold;font-size: 18px;">Certificate Automation</div>
+				<div class="card-body" style="padding: 10px;">
+					<div class="form-group">
+						<label for="name">Name : </label>
+						<input type="text" class="form-control" name="name" id="name" placeholder="Enter Name : " autocomplete="off" required>
+					</div>
+					<div class="form-group">
+						<label for="Select Course">Select Course : </label>
+						<select id="sel" class="form-control">
+							<option value="Programming for Problem Solving Using C R20">Programming for Problem Solving Using C R20</option>
+							<option value="C Programming - Lesson Plan - June - 2019">C Programming - Lesson Plan - June - 2019</option>
+							<option value="Python Programming - Lesson Plan - June - 2019">Python Programming - Lesson Plan - June - 2019</option>
+							<option value="Java Course - Lesson Plan - September - 2019">Java Course - Lesson Plan - September - 2019</option>
+						</select>
+					</div>
+				</div>
+				<div class="card-footer bg-primary" style="padding: 10px;"><button class="btn btn-success" onclick="guru()">Submit</button></div>
+			</div>
+			<div class="card" style="border: 2px solid #ccc;margin:10px;display: none;" id="card-out">
+				<div class="card-body" style="padding: 10px;">
+					<div id='output'></div>
+				</div>
+				<div class="card-footer" style="padding: 5px;">
+					<a class="btn btn-info" onclick="CopyToClipboard()">Click here to Copy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function guru()
+		{
+			var name = document.getElementById("name").value;
+			var course = document.getElementById("sel").value;
+			var out = " Dear "+name+",<br><br>Congratulations on completing the course  <strong>"+course+"</strong><br><br> We have issued your course completion certificate.<br><br> You would receive an email with a link to view/print the certificate.<br><br>Please verify your name on it and let us know if any modifications are required.<br><br>Feel free to contact us if you have any further queries.";
+			document.getElementById("output").innerHTML=out;
+			document.getElementById("card-out").style.display = "block";
+			document.getElementById("name").value="";
+			
+		}
+		function CopyToClipboard()
+         {
+            var r = document.createRange();
+            r.selectNode(document.getElementById('output'));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(r);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            alert("Copied Successfully!!")
+         }
+	</script>
+</body>
+</html>
