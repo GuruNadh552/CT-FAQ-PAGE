@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forgot password Automation</title>
+	<style type="text/css">
+		#output{
+			font-family:Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			background-color: #ffffff;
+			color: #000000;
+		}
+	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="col">
+			<div class="card" style="margin:10px;border: 1px solid #ccc;">
+				<div class="card-header bg-primary text-light text-center" style="padding: 8px;font-weight: bold;font-size: 18px;">Forgot password for particular Domain</div>
+				<div class="card-body" style="padding: 10px;">
+					<div class="form-group">
+						<label for="name">Domain Name : </label>
+						<input type="text" class="form-control" name="name" id="name" placeholder="Enter Domain Name : (Ex: city,bvcits,gitam) " autocomplete="off" required>
+					</div>
+				</div>
+				<div class="card-footer bg-primary" style="padding: 10px;"><button class="btn btn-success" onclick="guru()">Submit</button></div>
+			</div>
+			<div class="card" style="border: 2px solid #ccc;margin:10px;display: none;" id="card-out">
+				<div class="card-body" style="padding: 10px;">
+					<div id='output'></div>
+				</div>
+				<div class="card-footer" style="padding: 5px;">
+					<a class="btn btn-info" onclick="CopyToClipboard()">Click here to Copy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function guru()
+		{
+			var name = document.getElementById("name").value;
+			var out = "In case any user forgets his/her password, kindly inform him/her to follow the below instructions to generate OTP and reset the password.<br>a) Visit sign-in page (https://"+name+".codetantra.com/login.jsp)<br>b) Click on forgot (https://"+name+".codetantra.com/login.jsp).<br>c) Enter registered email id and click on recover.<br>d) He/She would receive an email with OTP from support@codetantra.com.<br>e) Please follow the instructions in the mail to reset the password by clicking the 1st link.<br>f) Please inform him/her to update his/her profile.<br>Note: If their OTP expires, they can request a new one by clicking the Resend New OTP button.";
+			document.getElementById("output").innerHTML=out;
+			document.getElementById("card-out").style.display = "block";
+			document.getElementById("name").value="";
+			
+		}
+		function CopyToClipboard()
+         {
+            var r = document.createRange();
+            r.selectNode(document.getElementById('output'));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(r);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            alert("Copied Successfully!!")
+         }
+	</script>
+</body>
+</html>
