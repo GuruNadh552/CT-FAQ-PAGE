@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>CT-Whatsapp</title>
+      <link rel="stylesheet" href="reset.min.css">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <style type="text/css">
+         code {
+         font-family: monospace;
+         color: crimson;
+         background-color: #f1f1f1;
+         padding: 3px;
+         font-size: 105%;
+         }
+         #snackbar {
+         visibility: hidden;
+         min-width: 250px;
+         margin-left: -125px;
+         background-color: red;
+         color: #fff;
+         text-align: center;
+         border-radius: 2px;
+         padding: 16px;
+         position: fixed;
+         z-index: 1;
+         left: 85%;
+         bottom: 800px;
+         font-size: 17px;
+         }
+         #search{
+         text-align: center;
+         width: 1000px;
+         padding: 12px;
+         border:2px solid #ccc;
+         font-size: 1rem;
+         outline: none;
+         color: black;
+         box-shadow: 1px 1px 1px #ccc;
+         border-radius:8px; 
+         margin-top:1em;
+         }
+         #snackbar.show {
+         visibility: visible;
+         -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+         animation: fadein 0.5s, fadeout 0.5s 2.5s;
+         }
+         @-webkit-keyframes fadein {
+         from {bottom: 0; opacity: 0;} 
+         to {bottom: 800px; opacity: 1;}
+         }
+         @keyframes fadein {
+         from {bottom: 0; opacity: 0;}
+         to {bottom: 800px; opacity: 1;}
+         }
+         @-webkit-keyframes fadeout {
+         from {bottom:800px; opacity: 1;} 
+         to {bottom: 0; opacity: 0;}
+         }
+         @keyframes fadeout {
+         from {bottom:800px; opacity: 1;}
+         to {bottom: 0; opacity: 0;}
+         }
+      </style>
+   </head>
+   <body>
+      <h1 style="text-align: center; color: #002b70; margin-top:20px;text-shadow: 1px 1px 1px #ccc;font-size: 30px;font-weight:bold;">CT - WhatsApp</h1>
+      <center><input type='text' id='search' placeholder='Enter FAQ to Search : ' autocomplete="off" ></center>
+      <!---------------========== First FAQ ==================== ------------------>
+      <details>
+         <summary class="sum-main">
+            <div class="summary-title"> Concatenating Two columns in Excel </div>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq1">
+            <code>=CONCATENATE(B8," ",C8)</code>
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq1');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <!---------------========== O1 Ends ==================== ------------------>
+
+      <!---------------========== 02 FAQ ==================== ------------------>
+      <details>
+         <summary class="sum-main">
+            <div class="summary-title"> Error 1006 is a temporary network error </div>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq2">
+           Error 1006 is a temporary network error <br>
+		   please restart your network source and try to reconnect.
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq2');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <!---------------========== O2 Ends ==================== ------------------>
+
+      <!---------------========== 03 FAQ ==================== ------------------>
+      <details>
+         <summary class="sum-main">
+            <div class="summary-title"> Student is Disconnected </div>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq3">
+           Sir/Madam,Red User icon with cross marks indicated that Student is not present in test window. please contact the student and know the issue.
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq3');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <!---------------========== O3 Ends ==================== ------------------>
+
+      <!---------------========== 04 FAQ ==================== ------------------>
+      <details>
+         <summary class="sum-main">
+            <div class="summary-title"> Students's video is not visible / Webcam streaming Not Available</div>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq4">
+           Refresh the student exam page by clicking on dotted circle button.
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq4');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <!---------------========== O4 Ends ==================== ------------------>
+
+      <!---------------========== 05 FAQ ==================== ------------------>
+      <details>
+         <summary class="sum-main">
+            <div class="summary-title">Student use the same device to take the test and upload the answers the camera will off</div>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq5">
+           When the student use the same device to take the test and upload the answers the camera will off while taking the pictures.
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq5');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <!---------------========== O5 Ends ==================== ------------------>
+
+      <!---------------========== 06 FAQ ==================== ------------------>
+      <details>
+         <summary class="sum-main">
+            <div class="summary-title">Student is not able to upload answers.</div>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq6">
+           Now student is able to upload the answer sheets.
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq6');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <!---------------========== O6 Ends ==================== ------------------>
+
+       <!---------------========== 07 FAQ ==================== ------------------>
+      <details>
+         <summary class="sum-main">
+            <div class="summary-title">Student is not visible.</div>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq7">
+           Now student is visible, please refresh the student card.
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq7');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <!---------------========== O7 Ends ==================== ------------------>
+
+       <!---------------========== 08 FAQ ==================== ------------------>
+      <details>
+         <summary class="sum-main">
+            <div class="summary-title">Asking for a screenshot of the issue.</div>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq8">
+           Please post the complete screenshot of the issue that you are facing
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq8');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <!---------------========== O8 Ends ==================== ------------------>
+
+      <!---------------========== 09 FAQ ==================== ------------------>
+      <details>
+         <summary class="sum-main">
+            <div class="summary-title">proctor/students encounter any issues</div>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq9">
+           Please drop a message here in case if proctor/students encounter any issues.
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq9');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <!---------------========== O9 Ends ==================== ------------------>
+
+      <!---------------========== 10 FAQ ==================== ------------------>
+      <details>
+         <summary class="sum-main">
+            <div class="summary-title">Instructing student for Scan and Upload </div>
+            <div class="summary-chevron-up">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </summary>
+         <div class="summary-content" id="faq10">
+           Please instruct this student to logout from second device and reloagin and then click on Scan and Upload instead of Open Test on mobile.
+         </div>
+         <a href="#" onclick="CopyToClipboard('faq10');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
+         <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+         </svg>
+      </details>
+      <!---------------========== 10 Ends ==================== ------------------>
+
+      <div id="snackbar">Text Copied to ClipBoard</div>
+      <script>
+         function CopyToClipboard(id)
+         {
+            var r = document.createRange();
+            r.selectNode(document.getElementById(id));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(r);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            var x = document.getElementById("snackbar");
+         x.className = "show";
+         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+         }
+         $(document).ready(function(){
+         $('#search').keyup(function(){
+         
+         // Search text
+         var text = $(this).val().toLowerCase();
+         
+         // Hide all sum-main class element
+         $('.sum-main').hide();
+         
+         // Search 
+         $('.sum-main .summary-title').each(function(){
+         
+         if($(this).text().toLowerCase().indexOf(""+text+"") != -1 ){
+         $(this).closest('.sum-main').show();
+         }
+         });
+         });
+         });
+      </script>
+   </body>
+</html>
