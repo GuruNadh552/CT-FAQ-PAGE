@@ -2,64 +2,73 @@
 <html lang="en" >
    <head>
       <meta charset="UTF-8">
-      <title>CT-FAQS</title>
+      <title>VITEEE-FAQS</title>
+      <link rel="stylesheet" href="reset.min.css">
       <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <style type="text/css">
-      	code {
-		  font-family: monospace;
-		  color: crimson;
-		  background-color: #f1f1f1;
-		  padding: 3px;
-		  font-size: 105%;
-		}
-				#snackbar {
-		  visibility: hidden;
-		  min-width: 250px;
-		  margin-left: -125px;
-		  background-color: red;
-		  color: #fff;
-		  text-align: center;
-		  border-radius: 2px;
-		  padding: 16px;
-		  position: fixed;
-		  z-index: 1;
-		  left: 85%;
-		  bottom: 800px;
-		  font-size: 17px;
-		}
-
-		#snackbar.show {
-		  visibility: visible;
-		  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-		  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-		}
-
-		@-webkit-keyframes fadein {
-		  from {bottom: 0; opacity: 0;} 
-		  to {bottom: 800px; opacity: 1;}
-		}
-
-		@keyframes fadein {
-		  from {bottom: 0; opacity: 0;}
-		  to {bottom: 800px; opacity: 1;}
-		}
-
-		@-webkit-keyframes fadeout {
-		  from {bottom:800px; opacity: 1;} 
-		  to {bottom: 0; opacity: 0;}
-		}
-
-		@keyframes fadeout {
-		  from {bottom:800px; opacity: 1;}
-		  to {bottom: 0; opacity: 0;}
-		}
+         code {
+         font-family: monospace;
+         color: crimson;
+         background-color: #f1f1f1;
+         padding: 3px;
+         font-size: 105%;
+         }
+         #snackbar {
+         visibility: hidden;
+         min-width: 250px;
+         margin-left: -125px;
+         background-color: red;
+         color: #fff;
+         text-align: center;
+         border-radius: 2px;
+         padding: 16px;
+         position: fixed;
+         z-index: 1;
+         left: 85%;
+         bottom: 800px;
+         font-size: 17px;
+         }
+         #search{
+         text-align: center;
+         width: 1000px;
+         padding: 12px;
+         border:2px solid #ccc;
+         font-size: 1rem;
+         outline: none;
+         color: black;
+         box-shadow: 1px 1px 1px #ccc;
+         border-radius:8px; 
+         }
+         #snackbar.show {
+         visibility: visible;
+         -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+         animation: fadein 0.5s, fadeout 0.5s 2.5s;
+         }
+         @-webkit-keyframes fadein {
+         from {bottom: 0; opacity: 0;} 
+         to {bottom: 800px; opacity: 1;}
+         }
+         @keyframes fadein {
+         from {bottom: 0; opacity: 0;}
+         to {bottom: 800px; opacity: 1;}
+         }
+         @-webkit-keyframes fadeout {
+         from {bottom:800px; opacity: 1;} 
+         to {bottom: 0; opacity: 0;}
+         }
+         @keyframes fadeout {
+         from {bottom:800px; opacity: 1;}
+         to {bottom: 0; opacity: 0;}
+         }
       </style>
    </head>
    <body>
       <h1 style="text-align: center; color: #002b70; margin-top:20px;text-shadow: 1px 1px 1px #ccc;font-size: 30px;font-weight:bold;">VITEEE - FAQS</h1>
+      <center><input type='text' id='search' placeholder='Enter FAQ to Search : ' autocomplete="off" ></center>
       <details>
-         <summary>
-            <span class="summary-title">If students are getting "No Match Records" found in their test section regarding the time slot</span>
+         <summary class="sum-main">
+            <div class="summary-title">If students are getting "No Match Records" found in their test section regarding the time slot</div>
             <div class="summary-chevron-up">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -69,9 +78,9 @@
          <div class="summary-content">
             <div id="faq1">
                Dear Candidate,
-				you should book slot 30 min before the exam.<br>
-				So, if you have booked the 1B slot before 11:00 AM, we have updated it, so please refresh the page to see and start your test.<br>
-				According to vit guidelines, if your not able to book slot in that particular time you are not allowed to write exam.
+               you should book slot 30 min before the exam.<br>
+               So, if you have booked the 1B slot before 11:00 AM, we have updated it, so please refresh the page to see and start your test.<br>
+               According to vit guidelines, if your not able to book slot in that particular time you are not allowed to write exam.
             </div>
          </div>
          <a href="#" onclick="CopyToClipboard('faq1');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
@@ -81,8 +90,8 @@
          </svg>
       </details>
       <details>
-         <summary>
-            <span class="summary-title">VIT Admission Contact Details</span>
+         <summary class="sum-main">
+            <div class="summary-title">VIT Admission Contact Details</div>
             <div class="summary-chevron-up">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -92,8 +101,8 @@
          <div class="summary-content">
             <div id="faq2">
                We request you to contact VITEEE admission cell.<br>
-			   Toll Free Number: 1800 891 4220 / 1800 102 0536.<br>
-			   Email: ugadmission@vit.ac.in <br>
+               Toll Free Number: 1800 891 4220 / 1800 102 0536.<br>
+               Email: ugadmission@vit.ac.in <br>
             </div>
          </div>
          <a href="#" onclick="CopyToClipboard('faq2');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
@@ -102,10 +111,9 @@
             <polyline points="18 15 12 9 6 15"></polyline>
          </svg>
       </details>
-
       <details>
-         <summary>
-            <span class="summary-title">Next button not visible or Next question not visible</span>
+         <summary class="sum-main">
+            <div class="summary-title">Next button not visible or Next question not visible</div>
             <div class="summary-chevron-up">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -127,8 +135,8 @@
          </svg>
       </details>
       <details>
-         <summary>
-            <span class="summary-title">Whilte screen at meeting page</span>
+         <summary class="sum-main">
+            <div class="summary-title">Whilte screen at meeting page</div>
             <div class="summary-chevron-up">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -138,9 +146,10 @@
          <div class="summary-content" id="faq4">
             <li>Ask them to connect with alternate network</li>
             <li>Try getting the main.log file. Steps to find the file 
-            	<br><code>Open Run --> type %AppData% --> Roaming --> CodeTantra SEA --> logs --> main.log file --> get it through mail from them </code></li>
-			3.For Ubuntu:<br>
-			<code>~/.config/Co.../logs/main.log</code>
+               <br><code>Open Run --> type %AppData% --> Roaming --> CodeTantra SEA --> logs --> main.log file --> get it through mail from them </code>
+            </li>
+            3.For Ubuntu:<br>
+            <code>~/.config/Co.../logs/main.log</code>
          </div>
          <a href="#" onclick="CopyToClipboard('faq4');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
          <div class="summary-chevron-down">
@@ -149,8 +158,8 @@
          </svg>
       </details>
       <details>
-         <summary>
-            <span class="summary-title">WebCam Issue</span>
+         <summary class="sum-main">
+            <div class="summary-title">WebCam Issue</div>
             <div class="summary-chevron-up">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -167,11 +176,9 @@
             <polyline points="18 15 12 9 6 15"></polyline>
          </svg>
       </details>
-
-
       <details>
-         <summary>
-            <span class="summary-title"> UnSupported Proxies Error</span>
+         <summary class="sum-main">
+            <div class="summary-title"> UnSupported Proxies Error</div>
             <div class="summary-chevron-up">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -180,10 +187,10 @@
          </summary>
          <img src="proxy.jpg" style="width: 900px;height: 300px;margin-left: 50px;">
          <div class="summary-content" id="faq10">
-           1. Please check any VPN is installed or not, If yes remove/disable the VPN <br>
-	   2. Check if any browser (Chrome, Edge but not Firefox) is getting internet or not<br>
-           3. If not, search for Proxy in the browser setting if its ON make it as turn off (auto detected Proxy and manual Proxy)<br>
-	   <code>NOTE:While disabling the proxy please ask them to confirm with their parents to turn off or not</code>
+            1. Please check any VPN is installed or not, If yes remove/disable the VPN <br>
+            2. Check if any browser (Chrome, Edge but not Firefox) is getting internet or not<br>
+            3. If not, search for Proxy in the browser setting if its ON make it as turn off (auto detected Proxy and manual Proxy)<br>
+            <code>NOTE:While disabling the proxy please ask them to confirm with their parents to turn off or not</code>
          </div>
          <a href="#" onclick="CopyToClipboard('faq10');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
          <div class="summary-chevron-down">
@@ -192,8 +199,8 @@
          </svg>
       </details>
       <details>
-         <summary>
-            <span class="summary-title">MircoPhone Issue</span>
+         <summary class="sum-main">
+            <div class="summary-title">MircoPhone Issue</div>
             <div class="summary-chevron-up">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -209,10 +216,9 @@
             <polyline points="18 15 12 9 6 15"></polyline>
          </svg>
       </details>
-
       <details>
-         <summary>
-            <span class="summary-title">Primary screen has gone black and it shows only my cursor</span>
+         <summary class="sum-main">
+            <div class="summary-title">Primary screen has gone black and it shows only my cursor</div>
             <div class="summary-chevron-up">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -221,14 +227,10 @@
          </summary>
          <div class="summary-content" id="faq7">
             Kindly try any one of these steps to resolve the issue.<br>
-
-			If it is black screen, verify software version. It should be 1.0.7 or higher<br>
-
-           1 .Please make sure that you have killed all the background processes.<br>
-
-           2.If you press the windows button your application will be minimized so there you can close your application and again open it.<br>
-
-           3. In case there is no other option to exit the app then press Ctrl+Alt+Delete ->Task Managere->kill the process. 
+            If it is black screen, verify software version. It should be 1.0.7 or higher<br>
+            1 .Please make sure that you have killed all the background processes.<br>
+            2.If you press the windows button your application will be minimized so there you can close your application and again open it.<br>
+            3. In case there is no other option to exit the app then press Ctrl+Alt+Delete ->Task Managere->kill the process. 
          </div>
          <a href="#" onclick="CopyToClipboard('faq7');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
          <div class="summary-chevron-down">
@@ -236,10 +238,9 @@
             <polyline points="18 15 12 9 6 15"></polyline>
          </svg>
       </details>
-
       <details>
-         <summary>
-            <span class="summary-title"> I am getting Invalid ID/ Password when logging in CT</span>
+         <summary class="sum-main">
+            <div class="summary-title"> I am getting Invalid ID/ Password when logging in CT</div>
             <div class="summary-chevron-up">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -248,15 +249,12 @@
          </summary>
          <div class="summary-content" id="faq8">
             <li>Solution: Take the email ID of the student and check in our Manage User if it is registered.</li>
-
-			<li>If Yes, registered - He probably forgot the password or is entering the wrong password. Ask him to go to viteee.vit.ac.in and click on Forgot Password. He will receive a mail with the password.</li>
-
-			<li>If No, not registered (no results found)  - Then his account is not registered in our platform yet. Ask him to connect with VITEEE team.</li>
-
-			<li>Background for *If No case* - The applicants create their acc on viteee and make the payment and are registered there firstly.
-			VITEEE team then forwards us all the collected data and we register them in CT. This process of them transferring the data to us usually takes 24hrs and when we register their accs. Hence they will see Invalid login id/Password</li>
-
-			<li>What to tell them in *email ID not found* case - VIT has not yet sent the data to us yet. Once they send us, we will register and you can login and book your slot. For further info you can contact VITEEE</li>
+            <li>If Yes, registered - He probably forgot the password or is entering the wrong password. Ask him to go to viteee.vit.ac.in and click on Forgot Password. He will receive a mail with the password.</li>
+            <li>If No, not registered (no results found)  - Then his account is not registered in our platform yet. Ask him to connect with VITEEE team.</li>
+            <li>Background for *If No case* - The applicants create their acc on viteee and make the payment and are registered there firstly.
+               VITEEE team then forwards us all the collected data and we register them in CT. This process of them transferring the data to us usually takes 24hrs and when we register their accs. Hence they will see Invalid login id/Password
+            </li>
+            <li>What to tell them in *email ID not found* case - VIT has not yet sent the data to us yet. Once they send us, we will register and you can login and book your slot. For further info you can contact VITEEE</li>
          </div>
          <a href="#" onclick="CopyToClipboard('faq8');return false;" style="background-color: #002b70;padding: 8px;color: white;margin: 10px; text-decoration: none;border-radius: 10px;">Copy To ClipBoard</a>
          <div class="summary-chevron-down">
@@ -264,10 +262,9 @@
             <polyline points="18 15 12 9 6 15"></polyline>
          </svg>
       </details>
-
       <details>
-         <summary>
-            <span class="summary-title"> Javascript Error</span>
+         <summary class="sum-main">
+            <div class="summary-title"> Javascript Error</div>
             <div class="summary-chevron-up">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -283,10 +280,7 @@
             <polyline points="18 15 12 9 6 15"></polyline>
          </svg>
       </details>
-
       <div id="snackbar">Text Copied to ClipBoard</div>
-
-
       <script>
          function CopyToClipboard(id)
          {
@@ -297,9 +291,27 @@
          	document.execCommand('copy');
          	window.getSelection().removeAllRanges();
          	var x = document.getElementById("snackbar");
-			x.className = "show";
-			setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+         x.className = "show";
+         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
          }
+         $(document).ready(function(){
+         $('#search').keyup(function(){
+         
+         // Search text
+         var text = $(this).val().toLowerCase();
+         
+         // Hide all sum-main class element
+         $('.sum-main').hide();
+         
+         // Search 
+         $('.sum-main .summary-title').each(function(){
+         
+         if($(this).text().toLowerCase().indexOf(""+text+"") != -1 ){
+         $(this).closest('.sum-main').show();
+         }
+         });
+         });
+         });
       </script>
    </body>
 </html>
